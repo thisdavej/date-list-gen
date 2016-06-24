@@ -2,26 +2,37 @@
   "name": "date-list-gen",
   "version": "0.2.1",
   "description": "Date list generator",
-  "main": "index.js",
-  "dependencies": {
-    "eslint": "^2.13.1"
+  "license": "MIT",
+  "repository": "thisdavej/date-list-gen",
+  "author": {
+    "name": "Dave Johnson",
+    "email": "thisdavej@gmail.com",
+    "url": "thisdavej.com"
   },
-  "devDependencies": {},
+  "main": "index.js",
+  "bin": {
+    "date-list-gen": "cli.js"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
     "test": "xo && ava"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thisdavej/date-list-gen.git"
-  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
   "keywords": [
     "date",
     "generator"
   ],
-  "author": "Dave Johnson <thisdavej@gmail.com> (http://thisdavej.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/thisdavej/date-list-gen/issues"
+  "dependencies": {
+    "meow": "^3.7.0",
+    "moment": "^2.13.0"
   },
-  "homepage": "https://github.com/thisdavej/date-list-gen#readme"
+  "devDependencies": {
+    "ava": "^0.15.1",
+    "xo": "^0.15.0"
+  }
 }
