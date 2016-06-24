@@ -9,8 +9,9 @@
     "email": "thisdavej@gmail.com",
     "url": "thisdavej.com"
   },
+  "main": "index.js",
   "bin": {
-    "date-list-gen": "cli.js"
+    "date-list-gen": "./cli.js"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -18,10 +19,6 @@
   "scripts": {
     "test": "xo && ava"
   },
-  "files": [
-    "index.js",
-    "cli.js"
-  ],
   "keywords": [
     "date",
     "generator"
